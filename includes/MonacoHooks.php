@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Config\Config;
 use MediaWiki\Hook\OutputPageBodyAttributesHook;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\User\UserOptionsLookup;
@@ -14,11 +15,11 @@ class MonacoHooks implements
 	private string $defaultTheme;
 
 	/**
-	 * @param GlobalVarConfig $config
+	 * @param Config $config
 	 * @param UserOptionsLookup $userOptionsLookup
 	 */
 	public function __construct(
-		GlobalVarConfig $config,
+		Config $config,
 		UserOptionsLookup $userOptionsLookup
 	) {
 		$this->userOptionsLookup = $userOptionsLookup;
@@ -30,11 +31,10 @@ class MonacoHooks implements
 	 * Add the theme selector to user preferences.
 	 *
 	 * @param User $user
-	 * @param array &$defaultPreferences
+	 * @param array &$preferences
 	 * @return bool|void True or no return value to continue or false to abort
 	 */
 	public function onGetPreferences( $user, &$preferences ) {
-
 		$ctx = RequestContext::getMain();
 		$skin = $ctx->getSkin();
 		$skinName = $skin->getSkinName();
@@ -63,7 +63,7 @@ class MonacoHooks implements
 		asort( $themeArray_for_sort );
 		$theme = 'default';
 		$themeDisplayNameMsg = $ctx->msg( "theme-name-$skinName-$theme" );
-		$themeDisplayName = 
+		$themeDisplayName =
 			$themeDisplayNameMsg->isDisabled()
 			? $theme
 			: $themeDisplayName = $themeDisplayNameMsg->text();
@@ -80,7 +80,7 @@ class MonacoHooks implements
 
 		// The entry 'theme' conflicts with Extension:Theme.
 		$preferences['theme_monaco'] = $this->allowedThemes
-			?	[
+			? [
 					'type' => 'select',
 					'options' => $themeArray,
 					'default' => $usersTheme,
@@ -88,7 +88,8 @@ class MonacoHooks implements
 					'section' => 'rendering/skin',
 					'hide-if' => $showIf
 				]
-			:	// If the selection of themes is deactiveted,
+			:
+				// If the selection of themes is deactiveted,
 				// show only an informative message instead
 				[
 					'type' => 'info',
@@ -110,22 +111,22 @@ class MonacoHooks implements
 		}
 
 		$bodyAttrs['class'] .= ' color2';
-		
+
 		$action = $skin->getRequest()->getVal( 'action' );
 		if ( in_array( $action, [ 'edit', 'history', 'diff', 'delete', 'protect', 'unprotect', 'submit' ] ) ) {
 			$bodyAttrs['class'] .= ' action_' . $action;
 		} elseif ( empty( $action ) || in_array( $action, [ 'view', 'purge' ] ) ) {
 			$bodyAttrs['class'] .= ' action_view';
 		}
-		
+
 		if ( $skin->showMasthead() ) {
 			if ( $skin->isMastheadTitleVisible() ) {
-			$bodyAttrs['class'] .= ' masthead-special';
+				$bodyAttrs['class'] .= ' masthead-special';
 			} else {
 				$bodyAttrs['class'] .= ' masthead-regular';
 			}
 		}
-		
+
 		$bodyAttrs['id'] = 'body';
 
 		if ( !$skin->getUser()->isRegistered() ) {

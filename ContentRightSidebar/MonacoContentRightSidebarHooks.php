@@ -4,7 +4,7 @@ define( 'RIGHT_SIDEBAR_START_TOKEN', '<!-- RIGHT SIDEBAR START -->' );
 define( 'RIGHT_SIDEBAR_END_TOKEN', '<!-- RIGHT SIDEBAR END -->' );
 define( 'RIGHT_SIDEBAR_WITHBOX_TOKEN', '<!-- RIGHT SIDEBAR WITHBOX -->' );
 define( 'RIGHT_SIDEBAR_TITLE_START_TOKEN', '<!-- RIGHT SIDEBAR TITLE START>' );
-define( 'RIGHT_SIDEBAR_TITLE_END_TOKEN', '<RIGHT SIDEBAR TITLE END -->');
+define( 'RIGHT_SIDEBAR_TITLE_END_TOKEN', '<RIGHT SIDEBAR TITLE END -->' );
 define( 'RIGHT_SIDEBAR_CLASS_START_TOKEN', '<!-- RIGHT SIDEBAR CLASS START>' );
 define( 'RIGHT_SIDEBAR_CLASS_END_TOKEN', '<RIGHT SIDEBAR CLASS END -->' );
 define( 'RIGHT_SIDEBAR_CONTENT_START_TOKEN', '<!-- RIGHT SIDEBAR CONTENT START -->' );
@@ -24,7 +24,7 @@ class MonacoContentRightSidebarHooks {
 	/**
 	 * @param Parser $parser
 	 */
-	public static function onParserFirstCallInit( Parser $parser )  {
+	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setHook( 'right-sidebar', [ __CLASS__, 'contentRightSidebarTag' ] );
 	}
 
@@ -35,7 +35,7 @@ class MonacoContentRightSidebarHooks {
 	 * @param PPFrame $frame
 	 * @return string
 	 */
-	public static function contentRightSidebarTag( $input, $args, $parser, $frame )  {
+	public static function contentRightSidebarTag( $input, $args, $parser, $frame ) {
 		$isContentTagged = false;
 		$m = [];
 
@@ -52,9 +52,9 @@ class MonacoContentRightSidebarHooks {
 			$input = $parser->recursiveTagParse( $input, $frame );
 		}
 
-		$with_box = ( isset( $args['with-box'] ) ? $args['with-box'] : ( isset( $args['withbox'] ) ? $args['withbox'] : null ) );
+		$with_box = $args['with-box'] ?? ( $args['withbox'] ?? null );
 
-		$out  = RIGHT_SIDEBAR_START_TOKEN;
+		$out = RIGHT_SIDEBAR_START_TOKEN;
 
 		if ( $with_box && !in_array( strtolower( $with_box ), [ 'false', 'off', 'no', 'none' ] ) ) {
 			$out .= RIGHT_SIDEBAR_WITHBOX_TOKEN;
@@ -103,7 +103,7 @@ class MonacoContentRightSidebarHooks {
 				break;
 			}
 
-			$content = substr( $html, $start, $end-$start );
+			$content = substr( $html, $start, $end - $start );
 			if ( strpos( $content, RIGHT_SIDEBAR_WITHBOX_TOKEN ) !== false ) {
 				$withBox = true;
 			}
@@ -112,7 +112,11 @@ class MonacoContentRightSidebarHooks {
 			if ( $startTitle !== false ) {
 				$endTitle = strpos( $content, RIGHT_SIDEBAR_TITLE_END_TOKEN, $startTitle );
 				if ( $endTitle !== false ) {
-					$title = urldecode( substr( $content, $startTitle+strlen( RIGHT_SIDEBAR_TITLE_START_TOKEN ), $endTitle-$startTitle-strlen( RIGHT_SIDEBAR_TITLE_START_TOKEN ) ) );
+					$title = urldecode( substr(
+						$content,
+						$startTitle + strlen( RIGHT_SIDEBAR_TITLE_START_TOKEN ),
+						$endTitle - $startTitle - strlen( RIGHT_SIDEBAR_TITLE_START_TOKEN )
+					) );
 				}
 			}
 
@@ -120,13 +124,17 @@ class MonacoContentRightSidebarHooks {
 			if ( $startClass !== false ) {
 				$endClass = strpos( $content, RIGHT_SIDEBAR_CLASS_END_TOKEN, $startClass );
 				if ( $endClass !== false ) {
-					$class = urldecode( substr( $content, $startClass+strlen( RIGHT_SIDEBAR_CLASS_START_TOKEN ), $endClass-$startClass-strlen( RIGHT_SIDEBAR_CLASS_START_TOKEN ) ) );
+					$class = urldecode( substr(
+						$content,
+						$startClass + strlen( RIGHT_SIDEBAR_CLASS_START_TOKEN ),
+						$endClass - $startClass - strlen( RIGHT_SIDEBAR_CLASS_START_TOKEN )
+					) );
 				}
 			}
 
 			$contentStart = strpos( $content, RIGHT_SIDEBAR_CONTENT_START_TOKEN );
 			if ( $contentStart !== false ) {
-				$content = substr( $content, $contentStart+strlen( RIGHT_SIDEBAR_CONTENT_START_TOKEN ) );
+				$content = substr( $content, $contentStart + strlen( RIGHT_SIDEBAR_CONTENT_START_TOKEN ) );
 			}
 
 			$contentEnd = strpos( $content, RIGHT_SIDEBAR_CONTENT_END_TOKEN );
@@ -135,20 +143,20 @@ class MonacoContentRightSidebarHooks {
 			}
 
 			$boxes[] = [ 'with-box' => $withBox, 'title' => $title, 'class' => $class, 'content' => $content ];
-			$html = substr( $html, 0, $start ) . substr( $html, $end+strlen( RIGHT_SIDEBAR_END_TOKEN ) );
+			$html = substr( $html, 0, $start ) . substr( $html, $end + strlen( RIGHT_SIDEBAR_END_TOKEN ) );
 		}
 
 		return $boxes;
 	}
 
 	 /**
-	 * MonacoRightSidebar custom hook handler. This is invoked by the Monaco skin 
-	 * to add the right sidebar. If this hook is not invoked, then right sidebar 
-	 * content renders as a right-floating box inside the article.
-	 *
-	 * @param Skin $skin
-	 * @return string
-	 */
+	  * MonacoRightSidebar custom hook handler. This is invoked by the Monaco skin
+	  * to add the right sidebar. If this hook is not invoked, then right sidebar
+	  * content renders as a right-floating box inside the article.
+	  *
+	  * @param Skin $skin
+	  * @return string
+	  */
 	public static function onMonacoRightSidebar( $skin ) {
 		$boxes = self::extractRightSidebarBoxes( $skin->data['bodytext'] );
 
