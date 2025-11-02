@@ -45,7 +45,7 @@
 		"MonacoTemplate": "includes/MonacoTemplate.php"
 	},
 	"ConfigRegistry": {
-		"monaco": "GlobalVarConfig::newInstance"
+		"monaco": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
 	},
 	"ResourceModules": {
 		"skins.monaco": {
