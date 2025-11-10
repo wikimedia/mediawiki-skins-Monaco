@@ -404,7 +404,7 @@ class MonacoTemplate extends BaseTemplate {
 				$feRandLink = Html::rawElement(
 					'a',
 					[ 'id' => 'fe_random_link', 'href' => SkinComponentUtils::makeSpecialUrl( 'Randompage' ) ],
-					wfMessage( 'viewrandompage' )->escaped()
+					wfMessage( 'monaco-view-random-page' )->escaped()
 				);
 
 				$html .= '<ul class="actions clearfix" id="articleFooterActions2">';
@@ -1315,7 +1315,7 @@ class MonacoTemplate extends BaseTemplate {
 		}
 		$language = $this->getSkin()->getLanguage();
 		$user = $skin->getMastheadUser();
-		$username = $user->isAnon() ? wfMessage( 'masthead-anonymous-user' )->text() : $user->getName();
+		$username = $user->isAnon() ? wfMessage( 'monaco-masthead-anonymous-user' )->text() : $user->getName();
 		$editcount = $language->formatNum( $user->isAnon() ? 0 : $user->getEditcount() );
 		$html = '
 			<div id="user_masthead" class="accent reset clearfix">
