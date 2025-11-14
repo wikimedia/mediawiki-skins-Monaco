@@ -169,6 +169,7 @@
 /*** ARTICLE FOOTER ***/
 .article_footer {
    border-top: 1px dashed #CCC;
+   border-bottom: 1px dashed #CCC;
    font-size: 9pt;
    margin: 0;
    overflow: hidden;
@@ -212,6 +213,31 @@
 .article_footer ul.actions li div {
    display: inline;
    position: relative;
+}
+
+.mw-footer {
+   display: flex;
+   align-items: center;
+   padding: 10px 15px;
+   flex-direction: row-reverse;
+}
+
+.mw-footer #f-list {
+   /* Move footer icons to the right */
+   margin-right: auto;
+}
+
+.mw-footer .footer-places {
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   list-style: none;
+   padding: 0;
+   margin: 10px 0;
+}
+
+.mw-footer .visualClear {
+   display: none;
 }
 
 #fe_history {
@@ -308,7 +334,7 @@
    margin-left: 16px;
    position: relative;
    margin-bottom: -2px;
-   top: -3px;     
+   top: -3px;
    font-size: 67%;
 }
 

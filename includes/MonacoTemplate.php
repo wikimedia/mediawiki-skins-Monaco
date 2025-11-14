@@ -435,8 +435,9 @@ class MonacoTemplate extends BaseTemplate {
 				$html .= "</div>\n";
 			} // end $namespaceType != 'none'
 		} // end else from CustomArticleFooter hook
-
-				$html .= '<!-- /ARTICLE FOOTER -->
+		$html .= '<!-- /ARTICLE FOOTER -->';
+		$html .= $this->getFooter();
+		$html .= '
 
 			</div>
 			<!-- /PAGE -->
@@ -1560,5 +1561,14 @@ class MonacoTemplate extends BaseTemplate {
 			return $this->get( 'catlinks' );
 		}
 		return '';
+	}
+
+	/**
+	 * Returns all footer links, but removes the last modified text, since
+	 * it is already implemented in Monaco in a different way.
+	 * @inheritDoc
+	 */
+	protected function getFooterLinks( $option = null ) {
+		return array_diff( parent::getFooterLinks( $option ), [ 'lastmod' ] );
 	}
 }
