@@ -4,10 +4,11 @@ use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
+use Wikimedia\Rdbms\SelectQueryBuilder;
 
 class MonacoSidebar {
 	/** @var array */
-	public $biggestCategories;
+	public $biggestCategories = [];
 
 	/** @var string */
 	public $editUrl = '';
@@ -617,22 +618,31 @@ class MonacoSidebar {
 			$data = $memc->get( $key );
 
 			if ( empty( $data ) ) {
-				$filterWordsA = [];
+				$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 
-				foreach ( $config->get( 'MonacoBiggestCategoriesBlacklist' ) as $word ) {
-					$filterWordsA[] = '(cl_to not like "%' . $word . '%")';
+				$blacklist = $config->get( 'MonacoBiggestCategoriesBlacklist' );
+				$where = [];
+				foreach ( $blacklist as $item ) {
+					$item = str_replace( ' ', '_', $item );
+					$where[] = 'lt_title NOT ' . $dbr->buildLike( $dbr->anyString(), $item, $dbr->anyString() );
 				}
 
-				$dbr = wfGetDB( DB_REPLICA );
-				$tables = [ 'categorylinks' ];
-				$fields = [ 'cl_to, COUNT(*) AS cnt' ];
-				$where = count( $filterWordsA ) > 0 ? [ implode( ' AND ', $filterWordsA ) ] : [];
-				$options = [ 'ORDER BY' => 'cnt DESC', 'GROUP BY' => 'cl_to', 'LIMIT' => $limit ];
-				$res = $dbr->select( $tables, $fields, $where, __METHOD__, $options );
+				$res = $dbr->newSelectQueryBuilder()
+					->select( [
+						'lt_title',
+						'cnt' => 'COUNT(*)'
+					] )
+					->from( 'categorylinks' )
+					->join( 'linktarget', null, 'cl_target_id=lt_id' )
+					->where( $where )
+					->groupBy( 'cl_target_id' )
+					->orderBy( 'cnt', SelectQueryBuilder::SORT_DESC )
+					->limit( $limit )
+					->caller( __METHOD__ )
+					->fetchResultSet();
 
-				// phpcs:ignore Generic.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition
-				while ( $row = $dbr->fetchObject( $res ) ) {
-					$this->biggestCategories[] = [ 'name' => $row->cl_to, 'count' => $row->cnt ];
+				foreach ( $res as $row ) {
+					$this->biggestCategories[] = [ 'name' => $row->lt_title, 'count' => $row->cnt ];
 				}
 
 				$memc->set( $key, $this->biggestCategories, 60 * 60 * 24 * 7 );

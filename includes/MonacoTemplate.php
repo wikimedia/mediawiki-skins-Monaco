@@ -210,7 +210,7 @@ class MonacoTemplate extends BaseTemplate {
 								'a',
 								[ 'id' => 'fe_edit_link', 'href' => $title->getEditURL() ],
 								wfMessage( 'monaco-footer-improve-linktext' )->text()
-							) )->text()
+							) )->escaped()
 						) );
 				}
 
@@ -295,7 +295,7 @@ class MonacoTemplate extends BaseTemplate {
 							[ 'id' => 'fe_history_icon', 'href' => $this->data['content_actions']['history']['href'] ],
 							$feHistoryIcon
 						);
-						$feHistoryLink = Html::rawElement(
+						$feHistoryLink = Html::element(
 							'a',
 							[ 'id' => 'fe_history_link', 'href' => $this->data['content_actions']['history']['href'] ],
 							$this->data['content_actions']['history']['text']
@@ -345,7 +345,7 @@ class MonacoTemplate extends BaseTemplate {
 							[ 'id' => 'fe_permalink_icon', 'href' => $nav_urls['permalink']['href'] ],
 							$fePermaIcon
 						);
-						$fePermaLink = Html::rawElement(
+						$fePermaLink = Html::element(
 							'a',
 							[
 								'id' => 'fe_permalink_link',
