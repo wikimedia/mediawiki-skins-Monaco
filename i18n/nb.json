@@ -11,8 +11,8 @@
 	"monaco-footer-improve": "Forbedre {{SITENAME}} ved å $1",
 	"monaco-footer-improve-linktext": "redigere denne siden",
 	"monaco-footer-lastedit": "$1 redigerte $2",
-	"viewrandompage": "Vis tilfeldig side",
-	"masthead-anonymous-user": "Anonym bruker",
+	"monaco-view-random-page": "Vis tilfeldig side",
+	"monaco-masthead-anonymous-user": "Anonym bruker",
 	"skinname-monaco": "Monaco",
 	"monaco-tab-addsection": "Legg igjen en beskjed",
 	"monaco-theme-prefs-label": "Tema:"

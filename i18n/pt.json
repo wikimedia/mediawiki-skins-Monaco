@@ -11,8 +11,8 @@
 	"monaco-footer-improve": "Melhore a  wiki {{SITENAME}} $1",
 	"monaco-footer-improve-linktext": "editando esta página",
 	"monaco-footer-lastedit": "$1 fez uma edição a $2",
-	"viewrandompage": "Ver página à sorte",
-	"masthead-anonymous-user": "Utilizador anónimo",
+	"monaco-view-random-page": "Ver página à sorte",
+	"monaco-masthead-anonymous-user": "Utilizador anónimo",
 	"skinname-monaco": "Mónaco",
 	"monaco-tab-addsection": "Deixar mensagem",
 	"monaco-theme-prefs-label": "Variante:"

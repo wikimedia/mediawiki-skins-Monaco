@@ -14,8 +14,8 @@
 	"monaco-footer-improve": "Verbessere {{SITENAME}} über $1",
 	"monaco-footer-improve-linktext": "Bearbeite diese Seite",
 	"monaco-footer-lastedit": "$1 machte eine Bearbeitung auf $2",
-	"viewrandompage": "Zeige Zufällige Seite",
-	"masthead-anonymous-user": "Gast",
+	"monaco-view-random-page": "Zeige Zufällige Seite",
+	"monaco-masthead-anonymous-user": "Gast",
 	"skinname-monaco": "Monaco",
 	"monaco-tab-addsection": "Nachricht hinterlassen"
 }

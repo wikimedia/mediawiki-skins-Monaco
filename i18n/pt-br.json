@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bartomelow",
+			"Jesielt"
+		]
+	},
+	"monaco-desc": "Tema Mônaco sem marca para uso com o MediaWiki padrão.",
+	"dynamic-links-write-article": "Crie um novo artigo",
+	"dynamic-links-add-image": "Carregue uma nova imagem",
+	"monaco-footer-improve": "Melhore {{SITENAME}} por $1",
+	"monaco-footer-improve-linktext": "editando esta página",
+	"monaco-footer-lastedit": "$1 fez uma edição em $2",
+	"monaco-view-random-page": "Ver página aleatória",
+	"monaco-masthead-anonymous-user": "Editor anônimo",
+	"skinname-monaco": "Mônaco",
+	"monaco-tab-addsection": "Deixe uma mensagem",
+	"monaco-theme-prefs-label": "Tema:",
+	"monaco-theme-name-beach": "Praia",
+	"monaco-theme-name-brick": "Tijolo",
+	"monaco-theme-name-carbon": "Carbono",
+	"monaco-theme-name-default": "padrão",
+	"monaco-theme-name-forest": "Floresta",
+	"monaco-theme-name-gaming": "Jogo",
+	"monaco-theme-name-jade": "Jade",
+	"monaco-theme-name-moonlight": "Luar",
+	"monaco-theme-name-obsession": "Obsessão",
+	"monaco-theme-name-ruby": "Rubi",
+	"monaco-theme-name-sapphire": "Safira",
+	"monaco-theme-name-sky": "Céu",
+	"monaco-theme-name-slate": "Ardósia",
+	"monaco-theme-name-smoke": "Fumaça",
+	"monaco-theme-name-spring": "Primavera",
+	"monaco-theme-selection-deactivated": "A seleção de temas está desativada."
+}

@@ -11,8 +11,8 @@
 	"monaco-footer-improve": "Förbättra {{SITENAME}} med $1",
 	"monaco-footer-improve-linktext": "redigera denna sida",
 	"monaco-footer-lastedit": "$1 gjorde en redigering på $2",
-	"viewrandompage": "Visa slumpmässig sida",
-	"masthead-anonymous-user": "Anonym användare",
+	"monaco-view-random-page": "Visa slumpmässig sida",
+	"monaco-masthead-anonymous-user": "Anonym användare",
 	"monaco-tab-addsection": "Lämna meddelande",
 	"monaco-theme-prefs-label": "Tema:"
 }

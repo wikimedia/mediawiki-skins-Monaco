@@ -10,8 +10,8 @@
 	"monaco-footer-improve": "Poboljšajte {{SITENAME}} $1",
 	"monaco-footer-improve-linktext": "uređivanjem ove stranice",
 	"monaco-footer-lastedit": "$1 napravio/la je izmjenu na $2",
-	"viewrandompage": "Pogledaj nasumičnu stranicu",
-	"masthead-anonymous-user": "Anonimni korisnik",
+	"monaco-view-random-page": "Pogledaj nasumičnu stranicu",
+	"monaco-masthead-anonymous-user": "Anonimni korisnik",
 	"skinname-monaco": "Monaco",
 	"monaco-tab-addsection": "Ostavi poruku"
 }

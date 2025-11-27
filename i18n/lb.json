@@ -5,19 +5,20 @@
 			"Volvox"
 		]
 	},
+	"dynamic-links-write-article": "En neien Artikel uleeën",
 	"dynamic-links-add-image": "En neit Bild eroplueden",
 	"monaco-footer-improve-linktext": "dës Säit änneren",
-	"viewrandompage": "Zoufälleg Säit weisen",
-	"masthead-anonymous-user": "Anonymme Benotzer",
+	"monaco-view-random-page": "Zoufälleg Säit weisen",
+	"monaco-masthead-anonymous-user": "Anonymme Benotzer",
 	"skinname-monaco": "Monaco",
 	"monaco-theme-prefs-label": "Theema:",
-	"theme-name-monaco-beach": "Plage",
-	"theme-name-monaco-brick": "Zill",
-	"theme-name-monaco-carbon": "Kuel",
-	"theme-name-monaco-forest": "Bësch",
-	"theme-name-monaco-ruby": "Rubin",
-	"theme-name-monaco-sapphire": "Saphir",
-	"theme-name-monaco-sky": "Himmel",
-	"theme-name-monaco-slate": "Schifer",
-	"theme-name-monaco-spring": "Fréijoer"
+	"monaco-theme-name-beach": "Plage",
+	"monaco-theme-name-brick": "Zill",
+	"monaco-theme-name-carbon": "Kuel",
+	"monaco-theme-name-forest": "Bësch",
+	"monaco-theme-name-ruby": "Rubin",
+	"monaco-theme-name-sapphire": "Saphir",
+	"monaco-theme-name-sky": "Himmel",
+	"monaco-theme-name-slate": "Schifer",
+	"monaco-theme-name-spring": "Fréijoer"
 }
