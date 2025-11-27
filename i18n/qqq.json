@@ -13,6 +13,7 @@
 	"monaco-toolbox": "{{notranslate}}",
 	"monaco-footer-improve": "Monaco footer improve message.",
 	"monaco-footer-improve-linktext": "Monaco footer improve link text message.",
+	"monaco-footer-lastedit": "Label displaying the author and the timestamp of the last edit of a page. $1 is the user, $2 the date.",
 	"viewrandompage": "'View random page' message.",
 	"masthead-anonymous-user": "Monaco anonymous user text in masthead.",
 	"skinname-monaco": "{{name}}",
