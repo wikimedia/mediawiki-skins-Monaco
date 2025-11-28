@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"Beta16"
 		]
 	},
 	"dynamic-links-write-article": "Crea una nuova voce",
+	"dynamic-links-add-image": "Carica una nuova immagine",
 	"monaco-theme-prefs-label": "Tema:",
 	"monaco-theme-name-default": "predefinito",
 	"monaco-theme-selection-deactivated": "La selezione dei temi è disattivata."

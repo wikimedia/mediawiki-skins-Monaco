@@ -1,7 +1,10 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Milicevic01"
+		]
 	},
+	"dynamic-links-write-article": "Направи нови чланак",
 	"monaco-theme-prefs-label": "Тема:",
 	"monaco-theme-name-beach": "Плажа",
 	"monaco-theme-name-default": "подразумевано",
