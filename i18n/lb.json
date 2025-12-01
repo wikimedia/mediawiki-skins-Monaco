@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
+	"dynamic-links-write-article": "En neien Artikel uleeën",
 	"dynamic-links-add-image": "En neit Bild eroplueden",
 	"monaco-footer-improve-linktext": "dës Säit änneren",
 	"viewrandompage": "Zoufälleg Säit weisen",

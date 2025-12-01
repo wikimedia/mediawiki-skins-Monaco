@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"monaco-desc": "Ваниллин MediaWiki-ца лело бренд йоцу Monaco скин.",
+	"dynamic-links-write-article": "Кхолла керла йаззам",
+	"dynamic-links-add-image": "Чудаккха керла сурт",
+	"monaco-footer-improve": "Тоде {{SITENAME}} $1 тӀехь",
+	"monaco-footer-improve-linktext": "хӀара агӀо хийцар",
+	"monaco-footer-lastedit": "$1 хийцамаш бина $2 тӀе",
+	"skinname-monaco": "Монако",
+	"monaco-tab-addsection": "Хаам бита"
+}
