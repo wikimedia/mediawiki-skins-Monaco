@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Penyuwangi"
+		]
+	},
+	"dynamic-links": "Anda dapat menambahkan ID tautan dinamis ke monaco menggunakan pesan ini, tambahkan ID baru di setiap baris! (Anda dapat menggunakan * di awal seperti di bilah sisi dan bilah sisi monaco untuk menjadikannya daftar)! Baris yang dimulai dengan spasi akan diperlakukan sebagai komentar. Setelah menambahkan ID baru ke daftar, Anda dapat menggunakan pesan 'dynamic-links-<id>'\n untuk menyesuaikan teks tautan dan pesan 'tautan dinamis-<id>-url' dengan nama\n dari judul halaman di wiki untuk tautan dinamis yang akan ditautkan."
+}
