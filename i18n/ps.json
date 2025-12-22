@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"monaco-desc": "له وانيلا مېډياويکي سره د کارولو لپاره د موناکو ناکره پوښۍ.",
+	"dynamic-links": "د دې پيغام په کارولو سره تاسو کولی شئ موناکو ته يو خوځنده تړونی ورگډ کړئ، په هره کرښه کې يو نوی پېژند ورگډ کړئ\n (تاسو کولی شئ لکه د څنگپټې او موناکو څنگپټې کې د دې لړليک جوړولو لپاره په پيل کې ٭ وکاروئ)\n هغه کرښې چې واټن سره پيلېږي هغه به د څرگندونې په توگه وگڼل شي.\n لړليک ته د نوي پېژند ورگډولو وروسته تاسو کولی شئ 'dynamic-links-<id>-url' پيغام کارولی شئ\nد ليک او dynamic-links-<id>-url' پيغام دوديزو لو لپاره\nپه ويکي کې د خوځنده تړوني لپاره د مخ سرليک تړلو لپاره.",
+	"dynamic-links-write-article": "يوه نوې ليکنه جوړول",
+	"dynamic-links-add-image": "نوی انځور راپورته‌کول",
+	"monaco-footer-improve": "{{SITENAME}} ښه کوونکی $1",
+	"monaco-footer-improve-linktext": "دا مخ سمول",
+	"monaco-footer-lastedit": "$1 په $2 کې يو سمون وکړ",
+	"monaco-view-random-page": "ناڅاپي مخ ښودل",
+	"monaco-masthead-anonymous-user": "ورکنومی کارن",
+	"monaco-tab-addsection": "پيغام پرېښودل",
+	"monaco-theme-prefs-label": "شاليد:",
+	"monaco-theme-name-beach": "سيندغاړه",
+	"monaco-theme-name-brick": "خښته",
+	"monaco-theme-name-carbon": "کاربن",
+	"monaco-theme-name-default": "تلواليز",
+	"monaco-theme-name-forest": "ځنگل",
+	"monaco-theme-name-gaming": "لوبې",
+	"monaco-theme-name-jade": "شين‌کاڼی",
+	"monaco-theme-name-moonlight": "وږمکۍ",
+	"monaco-theme-name-obsession": "اندېښنه",
+	"monaco-theme-name-ruby": "لال",
+	"monaco-theme-name-sapphire": "نيلم",
+	"monaco-theme-name-sky": "اسمان",
+	"monaco-theme-name-slate": "شوکاڼی",
+	"monaco-theme-name-smoke": "لوگی",
+	"monaco-theme-name-spring": "پسرلی",
+	"monaco-theme-selection-deactivated": "د شاليد ټاکنه ناچارن شوې ده."
+}

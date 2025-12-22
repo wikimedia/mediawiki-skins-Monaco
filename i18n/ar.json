@@ -1,7 +1,34 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Meno25"
+		]
 	},
+	"monaco-desc": "واجهة موناكو غير المُعلّمة للاستخدام مع برنامج ميدياويكي الأساسي.",
+	"dynamic-links": "يمكنك إضافة معرّفات روابط ديناميكية إلى موناكو باستخدام هذه الرسالة، أضف معرّفًا جديدًا في كل سطر! (يمكنك استخدام * في البداية كما في الشريط الجانبي وmonaco-sidebar لجعلها قائمة)! ستُعامل الأسطر التي تبدأ بمسافة كتعليق. بعد إضافة معرّف جديد إلى القائمة، يمكنك استخدام 'dynamic-links-<id> استخدم 'message\n' لتخصيص نص الرابط و'dynamic-links-'<id> -url' رسالة تحتوي على اسم\n عنوان صفحة على موقع الويكي للرابط الديناميكي المراد الربط به.",
+	"dynamic-links-write-article": "إنشاء مقال جديد",
+	"dynamic-links-add-image": "قم بتحميل صورة جديدة",
+	"monaco-footer-improve": "حسّن {{SITENAME}} بمقدار $1",
+	"monaco-footer-improve-linktext": "عدل هذه الصفحة",
+	"monaco-footer-lastedit": "قام $1 بتعديل على $2",
+	"monaco-view-random-page": "عرض صفحة عشوائية",
 	"monaco-masthead-anonymous-user": "مستخدم مجهول",
-	"monaco-theme-prefs-label": "السمة:"
+	"monaco-tab-addsection": "اترك رسائل",
+	"monaco-theme-prefs-label": "السمة:",
+	"monaco-theme-name-beach": "شاطئ",
+	"monaco-theme-name-brick": "الطوب",
+	"monaco-theme-name-carbon": "الكربون",
+	"monaco-theme-name-default": "تقصير",
+	"monaco-theme-name-forest": "غابة",
+	"monaco-theme-name-gaming": "ألعاب الفيديو",
+	"monaco-theme-name-jade": "يشم",
+	"monaco-theme-name-moonlight": "ضوء القمر",
+	"monaco-theme-name-obsession": "هوس",
+	"monaco-theme-name-ruby": "روبي",
+	"monaco-theme-name-sapphire": "الياقوت",
+	"monaco-theme-name-sky": "سماء",
+	"monaco-theme-name-slate": "لوح",
+	"monaco-theme-name-smoke": "دخان",
+	"monaco-theme-name-spring": "ربيع",
+	"monaco-theme-selection-deactivated": "تم تعطيل خيار اختيار السمات."
 }
