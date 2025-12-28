@@ -199,13 +199,13 @@ class MonacoTemplate extends BaseTemplate {
 					}
 				} else {
 					$html .= "								";
-					$html .= Html::rawElement( 'li', null,
+					$html .= Html::rawElement( 'li', [],
 						Html::rawElement( 'a', [ 'id' => 'fe_edit_icon', 'href' => $title->getEditURL() ],
 					$this->blankimg( [ 'id' => 'fe_edit_img', 'class' => 'sprite edit', 'alt' => '' ] ) ) .
 						' ' .
 						Html::rawElement(
 							'div',
-							null,
+							[],
 							wfMessage( 'monaco-footer-improve' )->rawParams( Html::element(
 								'a',
 								[ 'id' => 'fe_edit_link', 'href' => $title->getEditURL() ],
@@ -244,11 +244,11 @@ class MonacoTemplate extends BaseTemplate {
 							);
 						}
 
-						$html .= Html::rawElement( 'li', null,
+						$html .= Html::rawElement( 'li', [],
 							$feUserIcon . ' ' .
 							Html::rawElement(
 								'div',
-								null,
+								[],
 								wfMessage( 'monaco-footer-lastedit' )->rawParams(
 									$linkRenderer->makeLink(
 										$userPageTitle,
@@ -273,7 +273,7 @@ class MonacoTemplate extends BaseTemplate {
 						'alt' => ''
 					] );
 
-					$html .= Html::rawElement( 'li', null,
+					$html .= Html::rawElement( 'li', [],
 						$feCopyIcon . ' ' .
 						Html::rawElement( 'div', [ 'id' => 'copyright' ], $this->get( 'copyright' ) ) );
 				}
@@ -303,7 +303,7 @@ class MonacoTemplate extends BaseTemplate {
 
 						$html .= Html::rawElement( 'li', [ 'id' => 'fe_history' ],
 							$feHistoryIcon . ' ' .
-							Html::rawElement( 'div', null, $feHistoryLink ) );
+							Html::rawElement( 'div', [], $feHistoryLink ) );
 					}
 
 					if ( !empty( $nav_urls['recentchangeslinked'] ) ) {
@@ -325,7 +325,7 @@ class MonacoTemplate extends BaseTemplate {
 
 						$html .= Html::rawElement( 'li', [ 'id' => 'fe_recent' ],
 							$feRecentIcon . ' ' .
-							Html::rawElement( 'div', null, $feRecentLink ) );
+							Html::rawElement( 'div', [], $feRecentLink ) );
 					}
 
 					$html .= "</ul>\n";
@@ -356,7 +356,7 @@ class MonacoTemplate extends BaseTemplate {
 
 						$html .= Html::rawElement( 'li', [ 'id' => 'fe_permalink' ],
 							$fePermaIcon . ' ' .
-							Html::rawElement( 'div', null, $fePermaLink ) );
+							Html::rawElement( 'div', [], $fePermaLink ) );
 					}
 
 					if ( !empty( $nav_urls['whatlinkshere'] ) ) {
@@ -386,7 +386,7 @@ class MonacoTemplate extends BaseTemplate {
 
 						$html .= Html::rawElement( 'li', [ 'id' => 'fe_whatlinkshere' ],
 							$feWhatIcon . ' ' .
-							Html::rawElement( 'div', null, $feWhatLink ) );
+							Html::rawElement( 'div', [], $feWhatLink ) );
 					}
 					$html .= "</ul>\n";
 				}
@@ -410,7 +410,7 @@ class MonacoTemplate extends BaseTemplate {
 				$html .= '<ul class="actions clearfix" id="articleFooterActions2">';
 				$html .= Html::rawElement( 'li', [ 'id' => 'fe_randompage' ],
 					$feRandIcon . ' ' .
-					Html::rawElement( 'div', null, $feRandLink ) );
+					Html::rawElement( 'div', [], $feRandLink ) );
 
 				if ( !empty( $this->get( 'mobileview' ) ) ) {
 					$feMobileIcon = $this->blankimg( [
@@ -425,7 +425,7 @@ class MonacoTemplate extends BaseTemplate {
 
 					$html .= Html::rawElement( 'li', [ 'id' => 'fe_mobile' ],
 						$feMobileIcon . ' ' .
-						Html::rawElement( 'div', null, $this->get( 'mobileview' ) ) );
+						Html::rawElement( 'div', [], $this->get( 'mobileview' ) ) );
 				}
 
 				$html .= "</ul>\n";
@@ -1124,7 +1124,7 @@ class MonacoTemplate extends BaseTemplate {
 			) . "\n";
 		}
 		$box .= $boxContent;
-		$box .= Xml::closeElement( 'div ' );
+		$box .= Html::closeElement( 'div ' );
 		return $box;
 	}
 
@@ -1515,7 +1515,7 @@ class MonacoTemplate extends BaseTemplate {
 				$html .= $this->printCustomPageBarListLinks( $link["links"], [], "$indent	" );
 			}
 
-			$html .= Xml::closeElement( 'li' );
+			$html .= Html::closeElement( 'li' );
 			$html .= "\n";
 		}
 		$hookContainer = $this->getHookContainer();

@@ -254,7 +254,7 @@ class MonacoSidebar {
 			}
 
 			$classes[] = 'hover-navigation';
-			$menu = Html::rawElement( 'ul', null, $menu );
+			$menu = Html::rawElement( 'ul', [], $menu );
 			$menu = Html::rawElement( 'nav', [ 'id' => 'navigation', 'class' => implode( ' ', $classes ) ], $menu );
 
 			if ( $this->editUrl ) {
