@@ -1,6 +1,15 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Woytecr"
+		]
 	},
-	"monaco-theme-prefs-label": "Motyw:"
+	"dynamic-links-write-article": "Utwórz nowy artykuł",
+	"dynamic-links-add-image": "Prześlij nowy plik",
+	"monaco-footer-improve": "Ulepsz {{GRAMMAR:B.lp|{{SITENAME}}}} poprzez $1",
+	"monaco-footer-improve-linktext": "edytowanie tej strony",
+	"monaco-footer-lastedit": "$1 dokonał edycji $2",
+	"monaco-view-random-page": "Wyświetl losową stronę",
+	"monaco-theme-prefs-label": "Motyw:",
+	"monaco-theme-selection-deactivated": "Wybór motywów wyświetlania jest wyłączony."
 }
