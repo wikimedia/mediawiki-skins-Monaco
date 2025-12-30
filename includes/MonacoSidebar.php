@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Content\TextContent;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
@@ -360,8 +361,12 @@ class MonacoSidebar {
 
 		$revid = $title->getLatestRevID();
 		$a = new Article( $title, $revid );
+		$content = $a->getPage()->getContent();
+		if ( !$content instanceof TextContent ) {
+			return '';
+		}
 
-		return explode( "\n", ContentHandler::getContentText( $a->getPage()->getContent() ) );
+		return explode( "\n", $content->getText() );
 	}
 
 	/**
@@ -394,8 +399,11 @@ class MonacoSidebar {
 
 			$revid = $title->getLatestRevID();
 			$a = new Article( $title, $revid );
-			$text .= ContentHandler::getContentText( $a->getPage()->getContent() ) . "\n";
-
+			$content = $a->getPage()->getContent();
+			if ( $content instanceof TextContent ) {
+				$text .= $content->getText();
+			}
+			$text .= "\n";
 		}
 
 		return explode( "\n", $text );
