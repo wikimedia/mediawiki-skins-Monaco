@@ -1,6 +1,13 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Woytecr"
+		]
 	},
+	"dynamic-links-write-article": "Utwórz nowy artykuł",
+	"dynamic-links-add-image": "Prześlij nowy plik",
+	"monaco-footer-improve": "Ulepsz {{GRAMMAR:B.lp|{{SITENAME}}}} poprzez $1",
+	"monaco-footer-improve-linktext": "edytowanie tej strony",
+	"monaco-footer-lastedit": "$1 dokonał edycji $2",
 	"monaco-theme-prefs-label": "Motyw:"
 }

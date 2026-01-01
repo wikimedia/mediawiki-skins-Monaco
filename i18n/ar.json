@@ -1,6 +1,16 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Meno25"
+		]
 	},
+	"monaco-desc": "واجهة موناكو غير المُعلّمة للاستخدام مع برنامج ميدياويكي الأساسي.",
+	"dynamic-links": "يمكنك إضافة معرّفات روابط ديناميكية إلى موناكو باستخدام هذه الرسالة، أضف معرّفًا جديدًا في كل سطر! (يمكنك استخدام * في البداية كما في الشريط الجانبي وmonaco-sidebar لجعلها قائمة)! ستُعامل الأسطر التي تبدأ بمسافة كتعليق. بعد إضافة معرّف جديد إلى القائمة، يمكنك استخدام 'dynamic-links-<id> استخدم 'message\n' لتخصيص نص الرابط و'dynamic-links-'<id> -url' رسالة تحتوي على اسم\n عنوان صفحة على موقع الويكي للرابط الديناميكي المراد الربط به.",
+	"dynamic-links-write-article": "إنشاء مقال جديد",
+	"dynamic-links-add-image": "قم بتحميل صورة جديدة",
+	"monaco-footer-improve": "حسّن {{SITENAME}} بمقدار $1",
+	"monaco-footer-improve-linktext": "عدل هذه الصفحة",
+	"monaco-footer-lastedit": "قام $1 بتعديل على $2",
+	"monaco-tab-addsection": "اترك رسائل",
 	"monaco-theme-prefs-label": "السمة:"
 }
