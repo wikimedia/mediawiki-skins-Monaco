@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sabelöga"
+			"Sabelöga",
+			"Stefan2255"
 		]
 	},
 	"monaco-desc": "Omärkt Monaco-utseende för användning med vanilla MediaWiki.",
@@ -14,5 +15,21 @@
 	"monaco-view-random-page": "Visa slumpmässig sida",
 	"monaco-masthead-anonymous-user": "Anonym användare",
 	"monaco-tab-addsection": "Lämna meddelande",
-	"monaco-theme-prefs-label": "Tema:"
+	"monaco-theme-prefs-label": "Tema:",
+	"monaco-theme-name-beach": "Strand",
+	"monaco-theme-name-brick": "Tegel",
+	"monaco-theme-name-carbon": "Kol",
+	"monaco-theme-name-default": "standard",
+	"monaco-theme-name-forest": "Skog",
+	"monaco-theme-name-gaming": "Spel",
+	"monaco-theme-name-jade": "Jade",
+	"monaco-theme-name-moonlight": "Månsken",
+	"monaco-theme-name-obsession": "Besatthet",
+	"monaco-theme-name-ruby": "Rubin",
+	"monaco-theme-name-sapphire": "Safir",
+	"monaco-theme-name-sky": "Himmel",
+	"monaco-theme-name-slate": "Skiffer",
+	"monaco-theme-name-smoke": "Rök",
+	"monaco-theme-name-spring": "Vår",
+	"monaco-theme-selection-deactivated": "Valet av teman är inaktiverat."
 }
