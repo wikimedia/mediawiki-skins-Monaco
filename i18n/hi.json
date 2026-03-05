@@ -1,5 +1,15 @@
 {
 	"@metadata": {
-		"authors": []
-	}
+		"authors": [
+			"Saurmandal"
+		]
+	},
+	"monaco-desc": "वैनिला मीडियाविकि के साथ उपयोग के लिए अनब्रांडेड Monaco स्किन।",
+	"dynamic-links-write-article": "नया लेख बनाएँ",
+	"dynamic-links-add-image": "नया चित्र अपलोड करें",
+	"monaco-footer-improve": "$1 {{SITENAME}} को बेहतर बनाएँ",
+	"monaco-footer-improve-linktext": "इस पृष्ठ को सम्पादित करके",
+	"monaco-footer-lastedit": "$1 ने $2 पर एक सम्पादन किया",
+	"monaco-tab-addsection": "संदेश छोड़ें",
+	"monaco-theme-prefs-label": "थीम:"
 }
