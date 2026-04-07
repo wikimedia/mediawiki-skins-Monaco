@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Bartomelow",
+			"Eduardoaddad",
 			"Jesielt"
 		]
 	},
 	"monaco-desc": "Tema Mônaco sem marca para uso com o MediaWiki padrão.",
+	"dynamic-links": "Pode adicionar identificadores de links dinâmicas ao tema Mónaco usando esta mensagem. Adicione um novo identificador em cada linha (pode usar um * no início, como na barra lateral e na barra lateral do Mónaco, para fazer uma lista). As linhas que começam com um espaço serão tratadas como comentários. Depois de adicionar um novo identificador à lista, pode usar a mensagem 'dynamic-links-<id>' para personalizar o texto do link e a mensagem 'dynamic-links-<id>-url' com o nome de um título de página na wiki à qual a link dinâmica conduzirá.",
 	"dynamic-links-write-article": "Crie um novo artigo",
 	"dynamic-links-add-image": "Carregue uma nova imagem",
 	"monaco-footer-improve": "Melhore {{SITENAME}} por $1",
