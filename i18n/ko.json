@@ -1,14 +1,32 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
 	"dynamic-links-write-article": "새 문서 만들기",
 	"dynamic-links-add-image": "새 이미지 업로드",
+	"monaco-footer-improve-linktext": "이 문서 편집하기",
 	"monaco-view-random-page": "임의의 문서 표시",
 	"monaco-masthead-anonymous-user": "익명 사용자",
 	"skinname-monaco": "모나코",
 	"monaco-tab-addsection": "메시지 남기기",
-	"monaco-theme-prefs-label": "테마:"
+	"monaco-theme-prefs-label": "테마:",
+	"monaco-theme-name-beach": "해변",
+	"monaco-theme-name-brick": "벽돌",
+	"monaco-theme-name-carbon": "카본",
+	"monaco-theme-name-default": "기본값",
+	"monaco-theme-name-forest": "숲",
+	"monaco-theme-name-gaming": "게이밍",
+	"monaco-theme-name-jade": "비취석",
+	"monaco-theme-name-moonlight": "달빛",
+	"monaco-theme-name-obsession": "집착",
+	"monaco-theme-name-ruby": "루비",
+	"monaco-theme-name-sapphire": "사파이어",
+	"monaco-theme-name-sky": "하늘",
+	"monaco-theme-name-slate": "슬레이트",
+	"monaco-theme-name-smoke": "연기",
+	"monaco-theme-name-spring": "봄",
+	"monaco-theme-selection-deactivated": "테마 선택 기능이 비활성화되었습니다."
 }
