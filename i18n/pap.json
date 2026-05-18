@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kallmemel"
+		]
+	},
+	"dynamic-links-write-article": "Krea un artíkulo nobo",
+	"dynamic-links-add-image": "Subi un fail nobo",
+	"monaco-footer-improve": "Mehorá {{SITENAME}} ku $1",
+	"monaco-footer-improve-linktext": "Editá e página aki",
+	"monaco-footer-lastedit": "$1 a editá riba $2",
+	"monaco-view-random-page": "Wak kalke página",
+	"monaco-masthead-anonymous-user": "Usadó anónimo",
+	"monaco-tab-addsection": "Laga un mensahe",
+	"monaco-theme-prefs-label": "Tema:",
+	"monaco-theme-name-beach": "Playa",
+	"monaco-theme-name-brick": "Klenku",
+	"monaco-theme-name-carbon": "Karbon",
+	"monaco-theme-name-default": "standart",
+	"monaco-theme-name-forest": "Boske",
+	"monaco-theme-name-gaming": "Wega",
+	"monaco-theme-name-jade": "Djeit",
+	"monaco-theme-name-moonlight": "Lus di luna",
+	"monaco-theme-name-obsession": "Opseshon",
+	"monaco-theme-name-ruby": "Rubí",
+	"monaco-theme-name-sapphire": "Safir",
+	"monaco-theme-name-sky": "Shelu",
+	"monaco-theme-name-slate": "Lèi",
+	"monaco-theme-name-smoke": "Huma",
+	"monaco-theme-name-spring": "Primavera",
+	"monaco-theme-selection-deactivated": "E selekshon di tema ta desaktivá."
+}
