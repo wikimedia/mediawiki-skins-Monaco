@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kallmemel"
+		]
+	},
+	"dynamic-links-write-article": "Krea un artíkulo nobo",
+	"dynamic-links-add-image": "Subi un fail nobo",
+	"monaco-footer-improve": "Mehorá {{SITENAME}} ku $1",
+	"monaco-footer-improve-linktext": "Editá e página aki",
+	"monaco-footer-lastedit": "$1 a editá riba $2",
+	"monaco-tab-addsection": "Laga un mensahe",
+	"monaco-theme-prefs-label": "Tema:"
+}
