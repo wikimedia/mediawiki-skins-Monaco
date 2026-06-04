@@ -1,6 +1,16 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"HakanIST"
+		]
 	},
+	"monaco-desc": "Sade MediaWiki ile kullanım için markasız Monaco görünümü.",
+	"dynamic-links-write-article": "Yeni bir madde oluştur",
+	"dynamic-links-add-image": "Yeni bir görsel yükle",
+	"monaco-footer-improve": "{{SITENAME}} sitesini $1 ile iyileştirin",
+	"monaco-footer-improve-linktext": "bu sayfayı düzenleyerek",
+	"monaco-footer-lastedit": "$1, $2 tarihinde bir düzenleme yaptı",
+	"skinname-monaco": "Monaco",
+	"monaco-tab-addsection": "Mesaj bırak",
 	"monaco-theme-prefs-label": "Tema:"
 }
