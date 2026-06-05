@@ -1,6 +1,34 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"HakanIST"
+		]
 	},
-	"monaco-theme-prefs-label": "Tema:"
+	"monaco-desc": "Sade MediaWiki ile kullanım için markasız Monaco görünümü.",
+	"dynamic-links-write-article": "Yeni bir madde oluştur",
+	"dynamic-links-add-image": "Yeni bir görsel yükle",
+	"monaco-footer-improve": "{{SITENAME}} sitesini $1 ile iyileştirin",
+	"monaco-footer-improve-linktext": "bu sayfayı düzenleyerek",
+	"monaco-footer-lastedit": "$1, $2 tarihinde bir düzenleme yaptı",
+	"monaco-view-random-page": "Rastgele sayfa görüntüle",
+	"monaco-masthead-anonymous-user": "Anonim kullanıcı",
+	"skinname-monaco": "Monaco",
+	"monaco-tab-addsection": "Mesaj bırak",
+	"monaco-theme-prefs-label": "Tema:",
+	"monaco-theme-name-beach": "Kumsal",
+	"monaco-theme-name-brick": "Tuğla",
+	"monaco-theme-name-carbon": "Karbon",
+	"monaco-theme-name-default": "varsayılan",
+	"monaco-theme-name-forest": "Orman",
+	"monaco-theme-name-gaming": "Oyun",
+	"monaco-theme-name-jade": "Yeşim",
+	"monaco-theme-name-moonlight": "Ay Işığı",
+	"monaco-theme-name-obsession": "Tutku",
+	"monaco-theme-name-ruby": "Yakut",
+	"monaco-theme-name-sapphire": "Safir",
+	"monaco-theme-name-sky": "Gökyüzü",
+	"monaco-theme-name-slate": "Arduvaz",
+	"monaco-theme-name-smoke": "Duman",
+	"monaco-theme-name-spring": "Bahar",
+	"monaco-theme-selection-deactivated": "Tema seçimi devre dışı bırakıldı."
 }
