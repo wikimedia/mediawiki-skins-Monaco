@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"monaco-desc": "Neznačková téma vzhľadu Monaco na použitie s čistou MediaWiki.",
+	"dynamic-links": "Touto správou môžete do témy Monaco pridať ID dynamických odkazov, každé nové ID na samostatný riadok\n (na začiatku môžete použiť * ako v sidebar a monaco-sidebar, aby vznikol zoznam)\n Riadky začínajúce medzerou sa považujú za komentár.\n Po pridaní nového ID do zoznamu môžete použiť správu 'dynamic-links-<id>'\n na prispôsobenie textu odkazu a správu 'dynamic-links-<id>-url' s názvom\n stránky na wiki, na ktorú má dynamický odkaz smerovať.",
+	"dynamic-links-write-article": "Vytvoriť nový článok",
+	"dynamic-links-add-image": "Nahrať nový obrázok",
+	"monaco-footer-improve": "Vylepšite {{SITENAME}} $1",
+	"monaco-footer-improve-linktext": "úpravou tejto stránky",
+	"monaco-footer-lastedit": "$1 vykonal úpravu $2",
+	"skinname-monaco": "Monaco",
+	"monaco-tab-addsection": "Zanechať správu",
+	"monaco-theme-prefs-label": "Téma:"
+}
