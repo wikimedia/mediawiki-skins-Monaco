@@ -225,7 +225,7 @@ class MonacoTemplate extends BaseTemplate {
 					if ( $userId > 0 ) {
 						$user = User::newFromName( $wikiPage->getUserText() );
 						$userPageTitle = $user->getUserPage();
-						$userPageLink = $userPageTitle->getLocalUrl();
+						$userPageLink = $userPageTitle->getLocalURL();
 						$userPageExists = $userPageTitle->exists();
 						$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 						$userGender = $userOptionsManager->getOption( $user, 'gender' );

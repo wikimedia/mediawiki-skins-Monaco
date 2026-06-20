@@ -241,7 +241,7 @@ class SkinMonaco extends SkinTemplate {
 			if ( $this->getUser()->isAllowed( 'editinterface' ) ) {
 				if ( strtolower( $node['org'] ) == '#popular#' ) {
 					$results[] = [
-						'url' => Title::makeTitle( NS_MEDIAWIKI, 'Most popular articles' )->getLocalUrl(),
+						'url' => Title::makeTitle( NS_MEDIAWIKI, 'Most popular articles' )->getLocalURL(),
 						'text' => wfMessage( 'monaco-edit-this-menu' )->text(), 'class' => 'Monaco-sidebar_edit'
 					];
 				}
