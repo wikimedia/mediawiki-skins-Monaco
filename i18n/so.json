@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"monaco-desc": "Muuqaalka Monaco ee aan summadaysnayn oo loogu talagalay in lagu isticmaalo MediaWiki saafi ah.",
+	"dynamic-links": "Waxaad fariintan u adeegsan kartaa inaad Monaco ku darto aqoonsiyo xiriirro firfircoon; ku dar aqoonsi cusub sadar kasta\n (waxaad bilowga ku dari kartaa * sida ku jirta sidebar iyo monaco-sidebar si aad uga dhigto liis)\n Sadarrada ku bilaabma meel bannaan waxaa loo qaadan doonaa faallo.\n Kadib markaad liiska ku darto aqoonsi cusub, waxaad isticmaali kartaa farriinta 'dynamic-links-<id>'\n si aad u habayso qoraalka xiriirka, iyo farriinta 'dynamic-links-<id>-url' oo leh magaca\n cinwaan bog oo ku jira wiki-ga si xiriirka firfircooni ugu xirmo.",
+	"dynamic-links-write-article": "Abuur maqaal cusub",
+	"dynamic-links-add-image": "Soo geli fayl cusub",
+	"monaco-footer-improve": "Hagaaji {{SITENAME}} adigoo $1",
+	"monaco-footer-improve-linktext": "wax ka beddelaya boggan",
+	"monaco-footer-lastedit": "$1 ayaa wax ka beddelay $2",
+	"monaco-view-random-page": "Arag bog aan kala sooc lahayn",
+	"monaco-masthead-anonymous-user": "Isticmaale aan la aqoon",
+	"monaco-tab-addsection": "Ka tag farriin",
+	"monaco-theme-prefs-label": "Mawduuc:",
+	"monaco-theme-name-beach": "Xeebta",
+	"monaco-theme-name-brick": "Leben",
+	"monaco-theme-name-carbon": "Kaarboon",
+	"monaco-theme-name-default": "Caadi",
+	"monaco-theme-name-forest": "Kaymo",
+	"monaco-theme-name-gaming": "Ciyaaraha",
+	"monaco-theme-name-jade": "Jade",
+	"monaco-theme-name-moonlight": "Iftiinka dayaxa",
+	"monaco-theme-name-obsession": "Dareen xooggan",
+	"monaco-theme-name-ruby": "Luul cas",
+	"monaco-theme-name-sapphire": "Safirka",
+	"monaco-theme-name-sky": "Cir",
+	"monaco-theme-name-slate": "Dhagax madow",
+	"monaco-theme-name-smoke": "Qiiq",
+	"monaco-theme-name-spring": "Gu'ga",
+	"monaco-theme-selection-deactivated": "Xulashada mawduucyada waa la damiyay."
+}
