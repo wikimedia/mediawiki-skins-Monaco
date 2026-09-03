@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"monaco-desc": "Muuqaalka Monaco ee aan summadaysnayn oo loogu talagalay in lagu isticmaalo MediaWiki saafi ah.",
+	"dynamic-links": "Waxaad fariintan u adeegsan kartaa inaad Monaco ku darto aqoonsiyo xiriirro firfircoon; ku dar aqoonsi cusub sadar kasta\n (waxaad bilowga ku dari kartaa * sida ku jirta sidebar iyo monaco-sidebar si aad uga dhigto liis)\n Sadarrada ku bilaabma meel bannaan waxaa loo qaadan doonaa faallo.\n Kadib markaad liiska ku darto aqoonsi cusub, waxaad isticmaali kartaa farriinta 'dynamic-links-<id>'\n si aad u habayso qoraalka xiriirka, iyo farriinta 'dynamic-links-<id>-url' oo leh magaca\n cinwaan bog oo ku jira wiki-ga si xiriirka firfircooni ugu xirmo.",
+	"dynamic-links-write-article": "Abuur maqaal cusub",
+	"dynamic-links-add-image": "Soo geli fayl cusub",
+	"monaco-footer-improve": "Hagaaji {{SITENAME}} adigoo $1",
+	"monaco-footer-improve-linktext": "wax ka beddelaya boggan",
+	"monaco-footer-lastedit": "$1 ayaa wax ka beddelay $2",
+	"monaco-tab-addsection": "Ka tag farriin",
+	"monaco-theme-prefs-label": "Mawduuc:"
+}
