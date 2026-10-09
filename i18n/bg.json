@@ -1,6 +1,34 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"StanProg"
+		]
 	},
-	"monaco-theme-prefs-label": "Облик:"
+	"monaco-desc": "Небрандиран скин на Monaco за използване с vanilla MediaWiki.",
+	"dynamic-links": "Можете да добавите идентификатори на динамични връзки към Monaco, като използвате това съобщение. Добавете нов идентификатор на всеки ред\n (можете да използвате звездичка * в началото, както в страничната лента и monaco-sidebar, за да направите списък).\n Редовете, започващи с интервал, ще бъдат третирани като коментари.\n След като добавите нов идентификатор към списъка, можете да използвате съобщението 'dynamic-links-<id>',\n за да персонализирате текста на връзката, и съобщението 'dynamic-links-<id>-url' с името\nна заглавие\n на страница в уикито, към която да сочи динамичната връзка.",
+	"dynamic-links-write-article": "Създаване на нова статия",
+	"dynamic-links-add-image": "Качване на ново изображение",
+	"monaco-footer-improve": "Подобрете {{SITENAME}} с $1",
+	"monaco-footer-improve-linktext": "редактиране на тази страница",
+	"monaco-footer-lastedit": "$1 направи редакция на $2",
+	"monaco-view-random-page": "Преглед на произволна страница",
+	"monaco-masthead-anonymous-user": "Анонимен потребител",
+	"monaco-tab-addsection": "Оставете съобщение",
+	"monaco-theme-prefs-label": "Облик:",
+	"monaco-theme-name-beach": "Плаж",
+	"monaco-theme-name-brick": "Тухла",
+	"monaco-theme-name-carbon": "Въглерод",
+	"monaco-theme-name-default": "по подразбиране",
+	"monaco-theme-name-forest": "Гора",
+	"monaco-theme-name-gaming": "Игри",
+	"monaco-theme-name-jade": "Нефрит",
+	"monaco-theme-name-moonlight": "Лунна светлина",
+	"monaco-theme-name-obsession": "Обсесия",
+	"monaco-theme-name-ruby": "Рубин",
+	"monaco-theme-name-sapphire": "Сапфир",
+	"monaco-theme-name-sky": "Небе",
+	"monaco-theme-name-slate": "Шисти",
+	"monaco-theme-name-smoke": "Дим",
+	"monaco-theme-name-spring": "Пролет",
+	"monaco-theme-selection-deactivated": "Изборът на теми е деактивиран."
 }
